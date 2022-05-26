@@ -6,10 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Starter Snowpack App" />
   <link rel="stylesheet" type="text/css" href="/index.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <title>Starter Snowpack App</title>
 </head>
 
 <body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   <h1>LGTB Care Algorithm</h1>
   <script type="module" src="/index.js"></script>
 
@@ -30,7 +34,7 @@
   <form id="live_form">
     Demographics
     <div class="form-group">
-      <label class="control-label ">
+      <label class="control-label " for="age">
         age
       </label>
       <div>
@@ -48,32 +52,218 @@
       <div>
         <div class="radio">
           <label class="radio">
-            <input name="pronoun-h/h/h" type="radio" />
+            <input name="pronouns" type="radio" value="He/Him/His"/>
             He/Him/His
           </label>
         </div>
-      <div class="radio">
-        <label class="radio">
-          <input name="pronoun-s/s/s" type="radio" />
-          She/Her/Hers
-        </label>
+        <div class="radio">
+          <label class="radio">
+            <input name="pronouns" type="radio" value="She/Her/Hers"/>
+            She/Her/Hers
+          </label>
+        </div>
+        <div class="radio">
+          <label class="radio">
+            <input name="pronouns" type="radio" value="They/Them"/>
+            They/Them
+          </label>
+        </div>
+        <div class="radio">
+          <label class="radio">
+            <input name="pronouns" type="radio" value="He/They"/>
+            He/They
+          </label>
+        </div>
+        <div class="radio">
+          <label class="radio">
+            <input name="pronouns" type="radio" value="She/They"/>
+            She/They
+          </label>
+        </div>
       </div>
-      <div class="radio">
-        <label class="radio">
-          <input name="pronoun-t/t" type="radio" />
-          They/Them
-        </label>
+    </div>
+    <div class="form-group">
+      <label class="control-label" for="sab">
+        Sex Assigned at birth
+      </label>
+      <div>
+        <div class="radio">
+          <label class="radio">
+            <input name="sab" type="radio" value="Female"/>
+            Female
+          </label>
+        </div>
+        <div class="radio">
+          <label class="radio">
+            <input name="sab" type="radio" value="Male"/>
+            Male
+          </label>
+        </div>
+        <div class="radio">
+          <label class="radio">
+            <input name="sab" type="radio" value="Intersex"/>
+            Intersex
+          </label>
+        </div>      
       </div>
-      <div class="radio">
-        <label class="radio">
-          <input name="pronoun-h/t" type="radio" />
-          He/They
-        </label>
+    </div>
+    <div class="form-group">
+      <label class="control-label" for="gender">
+        Gender Identity
+      </label>
+      <div>
+        <div class="radio">
+          <label class="radio">
+            <input name="gender" type="radio" value="Man"/>
+            Man
+          </label>
+        </div>
+        <div class="radio">
+          <label class="radio">
+            <input name="gender" type="radio" value="Woman"/>
+            Woman
+          </label>
+        </div>
+        <div class="radio">
+          <label class="radio">
+            <input name="gender" type="radio" value="Non-binary"/>
+            Non-binary
+          </label>
+        </div>
+        <div class="radio">
+          <label class="radio">
+            <input name="gender" type="radio" value="Non-conforming"/>
+            Non-conforming
+          </label>
+        </div>
+        <div class="radio">
+          <label class="radio">
+            <input name="gender" type="radio" value="Not-listed"/>
+            Not-listed
+          </label>
+        </div>
       </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label" for="trans">
+        Do you identify as transgender
+      </label>
+      <div>
+        <div class="radio">
+          <label class="radio">
+            <input name="trans" type="radio" value="Yes"/>
+            Yes
+          </label>
+        </div>
+        <div class="radio">
+          <label class="radio">
+            <input name="trans" type="radio" value="No"/>
+            No
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label" for="sexual-orientation">
+        Do you identify as:
+      </label>
+      <div>
+        <div class="radio">
+          <label class="radio">
+            <input name="sexual-orientation" type="radio" value="Asexual"/>
+            Asexual
+          </label>
+        </div>
+        <div class="radio">
+          <label class="radio">
+            <input name="sexual-orientation" type="radio" value="bisexaul"/>
+            Bisexual
+          </label>
+        </div>
+        <div class="radio">
+          <label class="radio">
+            <input name="sexual-orientation" type="radio" value="Lesbian, gay, or homosexual"/>
+            Lesbian, gay, or homosexual
+          </label>
+        </div>
+        <div class="radio">
+          <label class="radio">
+            <input name="sexual-orientation" type="radio" value="Straight or heterosexual"/>
+            Straight or heterosexual
+          </label>
+        </div>
+        <div class="radio">
+          <label class="radio">
+            <input name="sexual-orientation" type="radio" value="Queer"/>
+            Queer
+          </label>
+        </div>
+        <div class="radio">
+          <label class="radio">
+            <input name="sexual-orientation" type="radio" value="Don't know"/>
+            Don't know
+          </label>
+        </div>
+        <div class="radio">
+          <label class="radio">
+            <input name="sexual-orientation" type="radio" value="Not listed"/>
+            Not listed:
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group-relationship">
+      <label class="control-label" for="relationship-status">
+        Relationship Status
+      </label>
+      <div>
+        <div class="radio">
+          <label class="radio">
+            <input name="relationship-status" type="radio" value="Single"/>
+            Single
+          </label>
+        </div>
+        <div class="radio">
+          <label class="radio">
+            <input name="relationship-status" type="radio" value="Partnered/dating"/>
+            Partnered/dating
+          </label>
+        </div>
+        <div class="radio">
+          <label class="radio">
+            <input name="relationship-status" type="radio" value="Married"/>
+            Married
+          </label>
+        </div>
+        <div class="radio">
+          <label class="radio">
+            <input name="relationship-status" type="radio" value="Not listed" />
+            Not listed:
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group d-none" name="partners-form-group">
+      <label class="control-label" for="partners-number">
+        with how many people are you partnered?
+      </label>
+      <div>
+        <div class="radio">
+          <label class="radio">
+            <input name="partners-number" type="radio" value="One Person" />
+            One Person
+          </label>
+        </div>
+        <div class="radio">
+          <label class="radio">
+            <input name="partners-number" type="radio" value="Multiple People" />
+            Multiple People
+          </label>
+        </div>
       </div>
     </div>
 
-    
+<!-- 
     <div class="form-group">
       <label class="control-label" for="feedback_ok">
         Please tell us what you liked and how we can improve:
@@ -112,7 +302,7 @@
       <button class="btn btn-primary " name="submit" type="submit">
         Submit
       </button>
-    </div>
+    </div> -->
   </form>
 </body>
 
