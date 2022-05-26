@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Starter Snowpack App" />
+  <link rel="stylesheet" type="text/css" href="/index.css" />
+  <title>Starter Snowpack App</title>
+</head>
+
+<body>
+  <h1>LGTB Care Algorithm</h1>
+  <script type="module" src="/index.js"></script>
+
+
+  <!-- age (num)
+    pronouns (radio)  - eventually instagram style multiselect
+    SAB (radio)
+    gender identity (radio)
+    do you identify as transgender (binary)
+    do you identify as... (radio + free response)
+    relationship status (radio + free response)
+      if: partnered || married || not listed == true
+        one person
+        multiple people
+      
+    -->
+
+  <form id="live_form">
+    Demographics
+    <div class="form-group">
+      <label class="control-label ">
+        age
+      </label>
+      <div>
+        <div class="number">
+          <label class="number">
+            <input name="age" type="number"/>         
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label" for="pronouns">
+        Pronouns
+      </label>
+      <div>
+        <div class="radio">
+          <label class="radio">
+            <input name="pronoun-h/h/h" type="radio" />
+            He/Him/His
+          </label>
+        </div>
+      <div class="radio">
+        <label class="radio">
+          <input name="pronoun-s/s/s" type="radio" />
+          She/Her/Hers
+        </label>
+      </div>
+      <div class="radio">
+        <label class="radio">
+          <input name="pronoun-t/t" type="radio" />
+          They/Them
+        </label>
+      </div>
+      <div class="radio">
+        <label class="radio">
+          <input name="pronoun-h/t" type="radio" />
+          He/They
+        </label>
+      </div>
+      </div>
+    </div>
+
+    
+    <div class="form-group">
+      <label class="control-label" for="feedback_ok">
+        Please tell us what you liked and how we can improve:
+      </label>
+      <textarea class="form-control form-control" cols="40" id="feedback_ok" name="feedback_ok" rows="10"></textarea>
+    </div>
+    <div class="form-group" id="div_testimonial">
+      <div>
+        <label class="control-label " for="testimonial">
+          Wonderful! We're so glad to hear that. Would you be willing to write a customer comment for our website?
+        </label>
+        <div>
+          <label class="radio-inline">
+            <input name="testimonial" type="radio" value="yes" />
+            Sure!
+          </label>
+          <label class="radio-inline">
+            <input name="testimonial" type="radio" value="no" />
+            I'd rather not.
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label " for="feedback_great">
+        Thank you so much! Please leave your testimonial here:
+      </label>
+      <textarea class="form-control" cols="40" id="feedback_great" name="feedback_great" rows="10"></textarea>
+    </div>
+    <div class="form-group" id="thanks_anyway">
+      <label class="control-label">
+        No problem, thanks for being a customer!
+      </label>
+    </div>
+    <div class="form-group">
+      <button class="btn btn-primary " name="submit" type="submit">
+        Submit
+      </button>
+    </div>
+  </form>
+</body>
+
+</html>
